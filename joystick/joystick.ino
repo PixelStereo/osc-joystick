@@ -91,7 +91,7 @@ void loop(void)
     global_mes.flush(); //object data clear
     
         // read the incoming byte:
-    incomingByte = digitalRead(button0);
+    incomingByte = digitalRead(button1);
   /************* // Send Serial messages to OSC ****************/
     global_mes.setAddress(destIP,destPort);
     global_mes.beginMessage("/joystick/up");
@@ -100,7 +100,7 @@ void loop(void)
     global_mes.flush(); //object data clear
     
         // read the incoming byte:
-    incomingByte = digitalRead(button1);
+    incomingByte = digitalRead(button2);
     /************* // Send Serial messages to OSC ****************/
     global_mes.setAddress(destIP,destPort);
     global_mes.beginMessage("/joystick/down");
@@ -109,7 +109,7 @@ void loop(void)
     global_mes.flush(); //object data clear
     
         // read the incoming byte:
-    incomingByte = digitalRead(button2);
+    incomingByte = digitalRead(button3);
     /************* // Send Serial messages to OSC ****************/
     global_mes.setAddress(destIP,destPort);
     global_mes.beginMessage("/joystick/left");
@@ -118,7 +118,7 @@ void loop(void)
     global_mes.flush(); //object data clear
     
         // read the incoming byte:
-    incomingByte = digitalRead(button3);
+    incomingByte = digitalRead(button0);
     /************* // Send Serial messages to OSC ****************/
     global_mes.setAddress(destIP,destPort);
     global_mes.beginMessage("/joystick/right");
